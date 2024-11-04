@@ -12,4 +12,5 @@ def joke():
     else:
         print("Sorry! I only tell jokes. ")
 
-joke()
+if __name__ == "__main__":    
+    joke()
