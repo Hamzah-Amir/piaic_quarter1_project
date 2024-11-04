@@ -14,4 +14,5 @@ def random_num():
 
         i += 1 # Increasing value of i by 1 in each iteration
 
-random_num()
+if __name__ == "__main__":
+    random_num()
