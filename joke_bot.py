@@ -1,4 +1,4 @@
-# Assignment no 1 create a joke bot that only tells jokes
+# Assignment no 3: create a joke bot that only tells jokes
 
 def joke():
     prompt = input("Hello user, what do you want from me: ").strip().lower()

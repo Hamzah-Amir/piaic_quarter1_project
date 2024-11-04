@@ -1,4 +1,4 @@
-# Assignment no 4: Write a program to print 10 random numbers between 1 to 10
+# Assignment no 5: Write a program to print 10 random numbers between 1 to 10
 
 from random import randint
 

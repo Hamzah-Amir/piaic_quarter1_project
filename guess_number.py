@@ -1,4 +1,4 @@
-# Write a program that generates a random number and then guide you to guess it
+# Assignment no 2: Write a program that generates a random number and then guide you to guess it
 
 from random import randint as r
 def main():

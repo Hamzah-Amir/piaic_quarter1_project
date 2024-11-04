@@ -1,4 +1,4 @@
-#Write a program that prints out the calls for a spaceship that is about to launch. Countdown 10 to 1 and then LIFTOFF!
+# Assignment no 4: Write a program that prints out the calls for a spaceship that is about to launch. Countdown 10 to 1 and then LIFTOFF!
 
 def liftoff():
     
