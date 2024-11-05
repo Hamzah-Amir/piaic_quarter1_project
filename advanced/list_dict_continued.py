@@ -57,7 +57,9 @@ def list_game():
     data = [2023, 6.28, True, None, "PIAIC", "Hamza", False]
 
     choice = input("Enter what do you want to do with list: (access, modify, or exit): ").lower()
-
+    
+    # Giving choices to user
+    
     if choice == "access":
         print(data)
 
