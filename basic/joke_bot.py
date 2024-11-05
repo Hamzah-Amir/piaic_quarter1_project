@@ -1,7 +1,7 @@
 # Assignment no 3: create a joke bot that only tells jokes
 
 def joke():
-    prompt = input("Hello user, what do you want from me: ").strip().lower()
+    prompt = input("Hello user, what do you want from me: ").lower()
     
     joke = """Here is a joke for you!\n    Panaversity GPT - Sophia is heading out to the grocery store. A programmer tells her:
     get a liter of milk, and if they have eggs, get 12. Sophia returns with 13 liters of
