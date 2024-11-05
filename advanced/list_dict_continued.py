@@ -1,23 +1,10 @@
-# Part 3: Slicing List Project 3 continued
-
-num = [5,6,648,13,364]
-
-def list_slice():
-    
-    start_index = int(input("Enter starting index: "))
-    last_index = int(input("Enter last index: "))
-
-    if (start_index or last_index) <= len(num):
-        updated_num = num[start_index:last_index]
-        print(updated_num)
-    else:
-        print("Index is out of range! ")
+# List Project 3 continued
 
 # Assignment no 3 (Final Task): Create a game That prompt user to access modify or slice list 
 # and prints the updated list
 
 
-# Firstly defining different modification and slicing functions to keep main game logic simple and read able
+# Firstly defining different modification  functions to keep main game logic simple and read able
 
 def pop_data():
      data = [2023, 6.28, True, None, "PIAIC", "Hamza", False]
@@ -59,23 +46,28 @@ def list_game():
     choice = input("Enter what do you want to do with list: (access, modify, or exit): ").lower()
     
     # Giving choices to user
-    
-    if choice == "access":
-        print(data)
+    while True:
+        if choice == "access":
+            print(data)
+            break
 
-    elif choice == "modify":
-            
-        modify_option = input("What do you want to do with list: (pop,append,remove): ").lower()
-            
-        if modify_option == 'pop':
-            pop_data()
-            
-        elif modify_option == "append":
-             append_data()
-            
-        elif modify_option == "remove":
-            remove_data()  
-            
+        elif choice == "modify":
+                
+            modify_option = input("What do you want to do with list: (pop,append,remove, exit): ").lower()
+                
+            if modify_option == 'pop':
+                pop_data()
+                
+            elif modify_option == "append":
+                append_data()
+                
+            elif modify_option == "remove":
+                remove_data()  
+            elif modify_option == "exit":
+                break
+       
+        elif choice == 'exit':
+            break
 
 if __name__ == "__main__":
     list_game()
