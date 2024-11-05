@@ -16,14 +16,30 @@ Returns element at specified index and if index is out of range returns an appro
 
 def list_func():
     
+    lst = ["hamza", "55", True, 489, 524.69]
     accept_index = int(input("Enter index of the list: "))
 
-    if accept_index in list:
+    if accept_index <= len(lst):
         print(list[accept_index])
+    
     else:
-        return "Index is out if range"
+        return "Index is out f range"
     
 def modify_list():
     
+    lst = ["hamza", "55", True, 489, 524.69]
+    
+    index = int(input("Enter Index value: "))
+    new_value = input("Enter new value you want to replace with: ")
 
-list_func()
+    if index < len(lst):
+        lst[index] = new_value
+        print(lst)
+        
+    else:
+        return "Index is out of range"    
+
+if __name__ == "__main__":
+    list_func()
+if __name__ == "__main__":    
+    modify_list()
