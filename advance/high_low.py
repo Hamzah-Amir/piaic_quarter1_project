@@ -12,13 +12,13 @@ def main():
     computer_score = 0 
     
     print("Welcome To The Game High Low!")
-    print("--------------------------------")
+    print("-------------------------------")
 
     while round <= rounds: 
         computer_num = randint(1,100) # Generating random numbers for both user and computer
         user_num = randint(1,100)
                              
-        print(f"\nRound no {round} starts \nHigh \nLow") # printing round no
+        print(f"\nRound no {round} starts \nHigh \nLow") # printing number of rounds.
 
         print(f"Your number is: {user_num}" )
 
@@ -27,7 +27,7 @@ def main():
         # Handling expected error in user's input
     
         if (user_guess != "higher") and (user_guess != "lower"):
-            print("You entered an invalid option, please enter \"higher\" or \"lower\" only")
+            print("You entered an invalid option, please enter \"higher\" or \"lower\" only: ")
             continue
             
         # Defining winning conditions of round
