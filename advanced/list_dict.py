@@ -56,26 +56,6 @@ def pop():
      except IndexError:
          print("Index is out oof range!")
 
-    
-
-def list_game():
-    
-    data = [2023, 6.28, True, None, "PIAIC", "Hamza", False]
-
-    choice = input("Enter what do you want to do with list: (access, modify, or slice)").lower()
-
-    try:
-        if choice == "access":
-            print(data)
-
-        elif choice == "modify":
-            modify_option = input("What do you want to do with list: (pop,append,remove) ").lower()
-            if modify_option == 'pop':
-                index = int(input("Enter index you want to pop: "))
-                data.pop(index)
-            else:
-                print("Index is out of range!")
-
 num = [5,6,648,13,364]
 
 def list_slice():

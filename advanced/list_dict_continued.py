@@ -46,29 +46,22 @@ def list_game():
     choice = input("Enter what do you want to do with list: (access, modify, or exit): ").lower()
     
     # Giving choices to user
-    while True:
-        if choice == "access":
+    
+    if choice == "access":
             print(data)
-            break
 
-        elif choice == "modify":
+    elif choice == "modify":
                 
-            modify_option = input("What do you want to do with list: (pop,append,remove, exit): ").lower()
+        modify_option = input("What do you want to do with list: (pop,append,remove, exit): ").lower()
                 
-            if modify_option == 'pop':
-                pop_data()
+        if modify_option == 'pop':
+            pop_data()
                 
-            elif modify_option == "append":
-                append_data()
+        elif modify_option == "append":
+            append_data()
                 
-            elif modify_option == "remove":
-                remove_data()  
-            elif modify_option == "exit":
-                break
-       
-        elif choice == 'exit':
-            break
+        elif modify_option == "remove":
+            remove_data()  
 
 if __name__ == "__main__":
     list_game()
-    list_slice()
