@@ -2,11 +2,14 @@
 
 def liftoff():
     
+    num = []
     # using step size technique in for loop to reverse yhe countdown
 
     for i in range(10, 0, -1):
-        print(i)
-    
+        
+        num.append(i)
+            
+    print(*num,end=" ")
     print("LIFTOFF!")
 
 if __name__ == "__main__":

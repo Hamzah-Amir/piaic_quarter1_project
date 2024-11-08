@@ -2,6 +2,8 @@
 
 from random import randint
 
+rand_num = []
+
 def random_num():
     
     i = 0
@@ -10,9 +12,14 @@ def random_num():
         
         # Generating random number until value of i is less then 10
         value = randint(1,100)
-        print(value)
 
         i += 1 # Increasing value of i by 1 in each iteration
+        
+        rand_num.append(value)
+
+        
+    print(*rand_num,end=" " )
+
 
 if __name__ == "__main__":
     random_num()
